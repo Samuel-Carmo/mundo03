@@ -1,3 +1,4 @@
+from time import sleep
 l = ['\033[m', #nulo
     '\033[30;42m', #verde
     '\033[30;41m', #vermelho
@@ -13,6 +14,7 @@ def titulo(msg, cor=0):
     print(f'  {msg}')
     print('~' * tot)
     print(l[0],end='')
+    sleep(1)
 
 
 def ajuda():
@@ -28,6 +30,7 @@ def ajuda():
             print(l[4])
             print(help(n))
             print(l[0], end='')
+            sleep(2)
     titulo('ATÉ LOGO!', 2)
 
 
