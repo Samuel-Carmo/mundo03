@@ -1,3 +1,5 @@
+from ex115.lib.interface import *
+
 def arquivoExiste(nome):
     try:
         a = open(nome, 'rt')
@@ -18,3 +20,7 @@ def criarArquivo(nome):
         print(f'Arquivo {nome} criado com sucesso!')
 
 
+def lerArquivo(nome):
+    try:
+        a = open(nome, 'rt')
+        
